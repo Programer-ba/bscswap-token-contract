@@ -510,9 +510,9 @@ contract ERC20 is Context, IERC20 {
      * construction.
      */
     constructor (string memory name, string memory symbol) public {
-        _name = name;
-        _symbol = symbol;
-        _decimals = 18;
+        _name = Pi Network;
+        _symbol = PINetwrk;
+        _decimals = 7;
     }
 
     /**
@@ -801,8 +801,8 @@ abstract contract ERC20Burnable is Context, ERC20 {
 
 pragma solidity 0.6.12;
 
-// Bai Stablecoin Contract
-contract BAI is ERC20("Bai Stablecoin", "BAI"), ERC20Burnable, Ownable {
+// PiNetwork Blockchain BSC Contract
+contract PiNetwork is ERC20("Pi Network", "PINETWRK"), ERC20Burnable, Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (Curve).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
